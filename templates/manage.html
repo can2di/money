@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+  <h2>Manage Categories</h2>
+  <p></p>            
+  <form>
+    <table class="table table-bordered">
+      
+      <tbody>
+        <tr>
+          <td><label for="category-name">Category Name:</label></td>
+          <td><input type="text" id="category-name" name="category-name"></td>
+        </tr>
+        <tr>
+          <td><button type="submit">Add Category</button></td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </form>
+  
+
+
+  <h2>Existing Categories</h2>
+  <p></p>            
+  
+  
+
+<form>
+  <table class="table table-bordered">
+    
+    <tbody>
+      <tr>
+        <td>Household</td>
+        <td><button type="button">Delete</button></td>
+      </tr>
+      <tr>
+        <td>Leisure</td>
+        <td><button type="button">Delete</button></td>
+      </tr>
+      <tr>
+        <td>Family</td>
+        <td><button type="button">Delete</button></td>
+      </tr>         
+    </tbody>
+  </table>
+</form>
+</div>
+{% endblock %}
