@@ -33,18 +33,12 @@
   <table class="table table-bordered">
     
     <tbody>
+      {% for item in my_list %}
       <tr>
-        <td>Household</td>
+        <td>{{ item }}</td>
         <td><button type="button">Delete</button></td>
       </tr>
-      <tr>
-        <td>Leisure</td>
-        <td><button type="button">Delete</button></td>
-      </tr>
-      <tr>
-        <td>Family</td>
-        <td><button type="button">Delete</button></td>
-      </tr>         
+      {% endfor %}           
     </tbody>
   </table>
 </form>

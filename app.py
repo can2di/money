@@ -37,8 +37,8 @@ def view():
 
 @app.route('/manage')
 def manage():
-    
-    return render_template('manage.html')
+    my_list = ["Household", "Leisure", "Bills"]
+    return render_template('manage.html', my_list=my_list)
 
 @app.route('/reports')
 def reports():
