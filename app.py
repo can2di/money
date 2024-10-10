@@ -24,8 +24,16 @@ def add():
 
 @app.route('/view')
 def view():
-    
-    return render_template('view.html')  
+    my_list = [
+
+        ['1', '£2', 'Household','Toilet roll'],
+
+        ['2', '£30', 'Leisure', 'Food and Drink'],
+
+        ['3', '£17', 'Bills', 'Car insurance']
+
+    ]
+    return render_template('view.html', my_list=my_list)  
 
 @app.route('/manage')
 def manage():
